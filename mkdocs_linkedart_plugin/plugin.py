@@ -244,7 +244,7 @@ title: Index of Classes, Properties, Authorities
         turtle_play = "https://niklasl.github.io/ldtr/demo/?edit=true&url=%s" % turtle
         links = f"[JSON-LD (raw)]({raw}) | [JSON-LD (playground)]({playground}) | [Turtle (raw)]({turtle}) | [Turtle (styled)]({turtle_play})"
 
-        return f"{jsstr}\n```mermaid\n{mmd}\n```\nOther Representations: {links}"
+        return f"```json\n{js}\n```\n```mermaid\n{mmd}\n```\nOther Representations: {links}"
 
     def traverse(self, what, top, page):
         for k, v in what.items():
